@@ -58,12 +58,12 @@ float luminosidad_porcentaje; // guardaremos el valor que nos da el sensor conve
 float coeficiente_porcentaje = 100.0 / 1023.0; // factor para convertir el valor del sensor a porcentaje
 
 /********** LEDS: **********/
-#define LED_TEMP_BAJA D1;
-#define LED_TEMP_ALTA D2;
-#define LED_HUM_BAJA D4;
-#define LED_HUM_ALTA D3;
-#define LED_LUM_BAJA D6;
-#define LED_LUM_ALTA D5;
+#define LED_TEMP_BAJA D1
+#define LED_TEMP_ALTA D2
+#define LED_HUM_BAJA D4
+#define LED_HUM_ALTA D3
+#define LED_LUM_BAJA D6
+#define LED_LUM_ALTA D5
 
 /************ Global State (you don't need to change this!) ******************/
 
