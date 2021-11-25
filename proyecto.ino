@@ -8,7 +8,7 @@ RODRIGO ANIBAL HERNANDEZ GARCIA 00050519
 ANTONIO ALEXIS PERTUZ ARÉVALO 00267016
 
 Sistema de control de temperatura, humedad y luminosidad para cultivos con envió de datos a la nube
-Cultivo elegido: Dalia
+Cultivo elegido: Verdolaga
 
 Recomendaciones para el cultivo:
 Temperatura adecuada: 18ªC a 25ºC
@@ -182,7 +182,7 @@ void loop() {
     digitalWrite(LED_TEMP_ALTA, LOW);
   } else if (t >= 25 && t <= 30) {
     frecuencia_riego.publish("Regar 2 veces a la semana"); // Si la temp es ideal, se recomienda regar 2 veces a la semana
-  } else {
+  } else if (t > 30){
     frecuencia_riego.publish("Regar 4 veces a la semana"); // Si la temp es mayor a 30, se recomienda regar 4 veces a la semana
     digitalWrite(LED_TEMP_BAJA, LOW);
     digitalWrite(LED_TEMP_ALTA, HIGH); // Se enciende alerta por temperatura muy alta (regar más abundantemente)
